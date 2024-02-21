@@ -5,7 +5,11 @@ https://github.com/huggingface/transformers/tree/main/examples/pytorch/audio-cla
 ## task
 
 ### 動作確認まで
-+ [ ] 保存先をraid_elmoに変更
-+ [ ] tensorboardにlog
-+ [ ] .gitignore
-+ [ ] サーバーにsftp
++ [x] 保存先をraid_elmoに変更
+  - サーバー側にディレクトリも作る
++ [x] cache_dirを変更
+  - データセットもcache内に保存（10GBある）
++ [x] tensorboardにlog
++ [x] .gitignore
++ [x] サーバーにsftp
++ [ ] 仮想環境の作成

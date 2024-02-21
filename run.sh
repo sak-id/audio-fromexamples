@@ -2,7 +2,7 @@ python run_audio_classification.py \
     --model_name_or_path facebook/wav2vec2-base \
     --dataset_name superb \
     --dataset_config_name ks \
-    --output_dir wav2vec2-base-ft-keyword-spotting \
+    --output_dir /raid_elmo/home/lr/ieda/audio_ks_result/wav2vec2-base-ft-keyword-spotting \
     --overwrite_output_dir \
     --remove_unused_columns False \
     --do_train \
@@ -24,4 +24,6 @@ python run_audio_classification.py \
     --load_best_model_at_end True \
     --metric_for_best_model accuracy \
     --save_total_limit 3 \
-    --seed 0
+    --seed 0 \
+    --cache_dir /raid_elmo/home/lr/ieda/audio_cache \
+    --tensorboard
