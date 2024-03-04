@@ -1,3 +1,6 @@
+#!usr/bin/env bash
+
+CUDA_VISIBLE_DEVICES=0 \
 python run_audio_classification.py \
     --model_name_or_path facebook/wav2vec2-base \
     --dataset_name superb \
@@ -26,4 +29,4 @@ python run_audio_classification.py \
     --save_total_limit 3 \
     --seed 0 \
     --cache_dir /raid_elmo/home/lr/ieda/audio_cache \
-    --tensorboard
+    --report_to tensorboard

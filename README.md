@@ -12,4 +12,9 @@ https://github.com/huggingface/transformers/tree/main/examples/pytorch/audio-cla
 + [x] tensorboardにlog
 + [x] .gitignore
 + [x] サーバーにsftp
-+ [ ] 仮想環境の作成
++ [x] 仮想環境の作成
+  - 既存のconda環境 examplesを流用
++ [ ] 実行
+   
+gpu07で実行中
+extracting data filesに時間がかかってる
